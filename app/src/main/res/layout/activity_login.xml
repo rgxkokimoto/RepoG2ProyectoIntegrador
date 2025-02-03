@@ -29,6 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Correo"
+        android:textColor="@color/principal"
         app:layout_constraintBottom_toTopOf="@+id/editTextText"
         tools:layout_editor_absoluteX="50dp" />
 
@@ -37,6 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contraseña"
+        android:textColor="@color/principal"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
         tools:layout_editor_absoluteX="50dp" />
 
@@ -90,8 +92,9 @@
 
     <Button
         android:id="@+id/btnUneteAhora"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/white"
         android:text="¡Únete ahora!"
         android:textColor="@color/principal"
         android:textColorLink="@color/principal"
