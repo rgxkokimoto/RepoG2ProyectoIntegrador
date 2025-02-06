@@ -8,7 +8,7 @@
     tools:context=".Registro">
 
     <TextView
-        android:id="@+id/tvTituloIniciarSesion"
+        android:id="@+id/tvTituloRegsitrate"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="@color/principal"
@@ -31,7 +31,7 @@
         android:text="Correo"
         android:textStyle="bold"
         android:textColor="@color/principal"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintBottom_toTopOf="@+id/etCorreo"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginHorizontal="45dp" />
 
@@ -43,11 +43,11 @@
         android:text="Contraseña"
         android:textStyle="bold"
         android:textColor="@color/principal"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/etContraseña"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/etCorreo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="45dp"
@@ -56,10 +56,10 @@
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTituloIniciarSesion" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloRegsitrate" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/etContraseña"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="45dp"
@@ -69,10 +69,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/etCorreo" />
 
     <Button
-        android:id="@+id/btnIniciarSesion"
+        android:id="@+id/btnRegistrate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -84,7 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvGoogle3" />
 
     <TextView
-        android:id="@+id/tvNoCuenta"
+        android:id="@+id/tvSiCuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="90dp"
@@ -92,7 +92,7 @@
         android:layout_marginTop="28dp"
         android:text="¿Ya tienes una cuenta?"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSesion" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistrate" />
 
     <TextView
         android:id="@+id/tvGoogle"
@@ -103,7 +103,7 @@
         android:layout_marginTop="8dp"
         android:text="Regístrate con:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNoCuenta"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvSiCuenta"/>
 
     <TextView
         android:id="@+id/tvGoogle2"
@@ -113,7 +113,7 @@
         android:layout_marginHorizontal="45dp"
         android:textColor="@color/rojo_label_Mal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/etCorreo"
         android:visibility="invisible" />
 
     <TextView
@@ -125,10 +125,10 @@
         android:textColor="@color/rojo_label_Mal"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/etContraseña" />
 
     <TextView
-        android:id="@+id/btnUneteAhora"
+        android:id="@+id/tvIniciarSesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -138,8 +138,8 @@
         android:textAlignment="center"
         android:textColor="@color/principal"
         android:textColorLink="@color/principal"
-        app:layout_constraintStart_toEndOf="@+id/tvNoCuenta"
-        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSesion" />
+        app:layout_constraintStart_toEndOf="@+id/tvSiCuenta"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistrate" />
 
     <Button
         android:id="@+id/btnGoogle"

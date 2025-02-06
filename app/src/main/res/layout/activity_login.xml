@@ -32,7 +32,7 @@
         android:text="Correo"
         android:textStyle="bold"
         android:textColor="@color/principal"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintBottom_toTopOf="@+id/etCorreo"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginHorizontal="45dp" />
 
@@ -44,11 +44,11 @@
         android:text="Contraseña"
         android:textStyle="bold"
         android:textColor="@color/principal"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/etContraseña"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/etCorreo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="45dp"
@@ -60,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvTituloIniciarSesion" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/etContraseña"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="45dp"
@@ -70,7 +70,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/etCorreo" />
 
     <Button
         android:id="@+id/btnIniciarSesion"
@@ -93,7 +93,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvGoogle3" />
+        app:layout_constraintTop_toBottomOf="@+id/tvContraseñaMal" />
 
     <TextView
         android:id="@+id/tvNoCuenta"
@@ -118,29 +118,29 @@
         app:layout_constraintTop_toBottomOf="@+id/tvNoCuenta"/>
 
     <TextView
-        android:id="@+id/tvGoogle2"
+        android:id="@+id/tvCorreoMal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Correo no encontrado"
         android:layout_marginHorizontal="45dp"
         android:textColor="@color/rojo_label_Mal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/etCorreo"
         android:visibility="invisible" />
 
     <TextView
-        android:id="@+id/tvGoogle3"
+        android:id="@+id/tvContraseñaMal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contraseña incorrecta"
         android:layout_marginHorizontal="45dp"
         android:textColor="@color/rojo_label_Mal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etContraseña"
         android:visibility="invisible"/>
 
     <TextView
-        android:id="@+id/btnUneteAhora"
+        android:id="@+id/tvUneteAhora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
