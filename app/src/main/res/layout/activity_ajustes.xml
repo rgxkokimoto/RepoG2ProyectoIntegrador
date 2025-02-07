@@ -19,7 +19,7 @@
         android:id="@+id/tvPerfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/titulo_menu_perfil"
+        android:text="@string/titulo_menu_ajustes"
         android:textColor="#000000"
         android:textSize="20sp"
         tools:ignore="MissingConstraints"
@@ -147,12 +147,130 @@
         tools:layout_editor_absoluteX="285dp"
         tools:layout_editor_absoluteY="227dp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvUser"
-        android:layout_width="320dp"
-        android:layout_height="290dp"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPrivacidad"
+        android:layout_width="410dp"
+        android:layout_height="80dp"
+        android:text="@string/texto_boton_privacidad"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:icon="@drawable/shield"
+        app:iconTint="#000000"
+        app:iconGravity="start"
+        app:iconPadding="-140dp"
+        app:iconSize="60dp"
+        android:backgroundTint="#D9D9D9"
+        app:cornerRadius="0dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="347dp" />
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGestionarCuenta"
+        android:layout_width="410dp"
+        android:layout_height="82dp"
+        android:text="@string/texto_boton_gestionar_cuenta"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:icon="@drawable/user"
+        app:iconTint="#000000"
+        app:iconGravity="start"
+        app:iconPadding="-50dp"
+        app:iconSize="60dp"
+        android:backgroundTint="#D9D9D9"
+        app:cornerRadius="0dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCambiarIdioma"
+        android:layout_width="410dp"
+        android:layout_height="80dp"
+        android:text="@string/texto_boton_cambiar_idioma"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:icon="@drawable/language"
+        app:iconTint="#000000"
+        app:iconGravity="start"
+        app:iconPadding="-60dp"
+        app:iconSize="60dp"
+        android:backgroundTint="#D9D9D9"
+        app:cornerRadius="0dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNotificaciones"
+        android:layout_width="410dp"
+        android:layout_height="80dp"
+        android:text="@string/texto_boton_notificaciones"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:icon="@drawable/notificaciones"
+        app:iconTint="#000000"
+        app:iconGravity="start"
+        app:iconPadding="-80dp"
+        app:iconSize="60dp"
+        android:backgroundTint="#D9D9D9"
+        app:cornerRadius="0dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="468dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBorrarCuenta"
+        android:layout_width="410dp"
+        android:layout_height="80dp"
+        android:text="@string/texto_boton_hakai"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:icon="@drawable/borrar_cuenta"
+        app:iconTint="#000000"
+        app:iconGravity="start"
+        app:iconPadding="-60dp"
+        app:iconSize="60dp"
+        android:backgroundTint="#D9D9D9"
+        app:cornerRadius="0dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="540dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnTerminosCondiciones"
+        android:layout_width="410dp"
+        android:layout_height="95dp"
+        android:text="@string/texto_boton_terminos"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:icon="@drawable/libro"
+        app:iconTint="#000000"
+        app:iconGravity="start"
+        app:iconPadding="-25dp"
+        app:iconSize="60dp"
+        android:backgroundTint="#D9D9D9"
+        app:cornerRadius="0dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="612dp" />
+
+    <View
+        android:layout_width="411dp"
+        android:layout_height="30dp"
+        android:background="#D9D9D9"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="700dp" />
+
+    <TextView
+        android:id="@+id/tvDerechos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/derechos_grupo2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="711dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

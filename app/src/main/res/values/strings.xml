@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">g2Int101Experience</string>
+    <string name="titulo_menu_ajustes">Ajustes</string>
+    <string name="apodo_usuario">Attzy</string>
+    <string name="nombre_usuario">\@attzyrod6</string>
+    <string name="texto_experiencias_perfil">Experiencias</string>
+    <string name="texto_retos_activos">Retos Activos</string>
+    <string name="texto_trofeos">Trofeos</string>
+    <string name="texto_boton_privacidad">Privacidad</string>
+    <string name="texto_boton_gestionar_cuenta">Gestionar Cuenta</string>
+    <string name="texto_boton_cambiar_idioma">Cambiar Idioma</string>
+    <string name="texto_boton_notificaciones">Notificaciones</string>
+    <string name="texto_boton_hakai">Borrar Cuenta</string>
+    <string name="texto_boton_terminos">Terminos y Condiciones</string>
+    <string name="derechos_grupo2">Todos los derechos pertenecen al grupo 2</string>
+    <string name="titulo_menu_perfil">Perfil</string>
 </resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/btnFlechaAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:srcCompat="@drawable/btn_flecha_atras"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <TextView
+        android:id="@+id/tvPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_menu_perfil"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="22dp" />
+
+    <View
+        android:layout_width="411dp"
+        android:layout_height="280dp"
+        android:background="#ECECEC"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <ImageView
+        android:id="@+id/imagenPerfilAmigo"
+        android:layout_width="164dp"
+        android:layout_height="131dp"
+        app:srcCompat="@drawable/jorge"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <TextView
+        android:id="@+id/tvApodoAmigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jorge"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="243dp" />
+
+    <TextView
+        android:id="@+id/tvNombreAmigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\@JorgeSaldaña"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <TextView
+        android:id="@+id/tvTituloMisProgresos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mis Progresos"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="313dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/trofeo_verde"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUser"
+        android:layout_width="411dp"
+        android:layout_height="387dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="344dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
