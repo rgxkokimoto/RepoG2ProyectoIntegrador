@@ -1,10 +1,11 @@
 <resources>
+    <string name="web_client_id">820104310218-plap8uunrm8rar4fng4vs0ff7n2ekhu5.apps.googleusercontent.com</string>
     <string name="app_name">g2Int101Experience</string>
     <string name="registrarse">Registrarse</string>
     <string name="correo">Correo</string>
     <string name="ya_tienes_una_cuenta">¿Ya tienes una cuenta?</string>
     <string name="inicia_sesi_n">¡Inicia Sesión!</string>
-    <string name="registrarse_con">Registrarse con:</string>
+    <string name="inicia_conGoogle">Inicia con Google:</string>
     <string name="contrase_a">Contraseña</string>
     <string name="introduzca_su_correo_electr_nico">Introduzca su correo electrónico</string>
     <string name="correo_no_valido_revise_los_datos">Correo no valido revise los datos</string>
@@ -19,5 +20,4 @@
     <string name="contrsse_a_no_valida_revise_los_datos">Contraseña no valida revise los datos</string>
     <string name="el_correo_electr_nico_no_puede_estar_vacio">El correo electrónico no puede estar vacio</string>
     <string name="la_contrase_a_no_puede_estar_vacia">La contraseña no puede estar vacia</string>
-
 </resources>

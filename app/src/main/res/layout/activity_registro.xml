@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
-    >
+    tools:context=".Login">
 
     <TextView
         android:id="@+id/tvTituloInicio"
@@ -60,17 +59,6 @@
         app:layout_constraintStart_toEndOf="@+id/tvNoCuenta"
         app:layout_constraintTop_toBottomOf="@+id/chbRecuerdame" />
 
-
-    <TextView
-        android:id="@+id/tvLogConGoogle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginStart="35dp"
-        android:textSize="15sp"
-        android:text="@string/registrarse_con"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNoCuenta" />
 
     <TextView
         android:textSize="16sp"
