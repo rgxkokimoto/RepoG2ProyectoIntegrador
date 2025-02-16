@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.g2int101experience.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+<!--    Fragmento con metodo 2 conectado por UI soporta animaciones-->
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.g2int101experience.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_dashboardSub1Fragment"
+            app:destination="@id/dashboardSub1Fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dashboardSub1Fragment"
+        android:name="com.example.g2int101experience.ui.dashboard.DashboardSub1Fragment"
+        android:label="fragment_dashboard_sub1"
+        tools:layout="@layout/fragment_dashboard_sub1" />
+
+    <fragment
+        android:id="@+id/dashboardSub2Fragment"
+        android:name="com.example.g2int101experience.ui.dashboard.DashboardSub2Fragment"
+        android:label="fragment_dashboard_sub2"
+        tools:layout="@layout/fragment_dashboard_sub2" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.g2int101experience.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+</navigation>

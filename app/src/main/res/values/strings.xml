@@ -20,4 +20,19 @@
     <string name="contrsse_a_no_valida_revise_los_datos">Contraseña no valida revise los datos</string>
     <string name="el_correo_electr_nico_no_puede_estar_vacio">El correo electrónico no puede estar vacio</string>
     <string name="la_contrase_a_no_puede_estar_vacia">La contraseña no puede estar vacia</string>
+    <string name="title_activity_prub_button_navigation">PrubButtonNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ir_a_dasboard_sub1">Ir a dasboard sub1</string>
+    <string name="cargando_texto_en_fragmento_dashboard_sub_2">Cargando texto en fragmento Dashboard sub 2</string>
+    <string name="cargando_texto_en_el_fragmento_de_sub1">Cargando texto en el fragmento de sub1</string>
+    <string name="ir_a_dashboard_sub_2">Ir a dashboard sub 2</string>
+    <string name="explorar">Explorar</string>
+    <string name="desafios">Desafios</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="encuentra_ntus_retos">Encuentra\ntus Retos</string>
+
 </resources>
