@@ -7,21 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".Login">
 
-
     <TextView
-        android:id="@+id/tvTituloIniciarSesion"
+        android:id="@+id/tvTituloInicio"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="78dp"
         android:background="@color/principal"
-        android:drawableTint="#D6CCCC"
-        android:paddingTop="25sp"
-        android:text="Iniciar Sesión"
+        android:padding="20dp"
+        android:text="@string/iniciar_sesi_n"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,140 +27,149 @@
         android:id="@+id/tvCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Correo"
+        android:layout_marginStart="25dp"
+        android:text="@string/correo"
+        android:textSize="16sp"
         android:textStyle="bold"
-        android:textColor="@color/principal"
-        app:layout_constraintBottom_toTopOf="@+id/etCorreo"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginHorizontal="45dp" />
-
-    <TextView
-        android:id="@+id/tvContraseña"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="45dp"
-        android:text="Contraseña"
-        android:textStyle="bold"
-        android:textColor="@color/principal"
-        app:layout_constraintBottom_toTopOf="@+id/etContraseña"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/etCorreo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="45dp"
-        android:layout_marginTop="63dp"
-        android:inputType="text"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTituloIniciarSesion" />
-
-    <EditText
-        android:id="@+id/etContraseña"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="45dp"
-        android:layout_marginTop="49dp"
-        android:inputType="textPassword"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etCorreo" />
-
-    <Button
-        android:id="@+id/btnIniciarSesion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
-        android:backgroundTint="@color/principal"
-        android:text="Iniciar Sesión"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chbRecuerdame" />
-
-    <CheckBox
-        android:id="@+id/chbRecuerdame"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Recordarme al entrar en la app"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvContraseñaMal" />
 
     <TextView
         android:id="@+id/tvNoCuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="90dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="28dp"
-        android:text="¿No tienes una cuenta?"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/no_tienes_una_cuenta"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSesion" />
+        app:layout_constraintTop_toBottomOf="@+id/chbRecuerdame" />
 
     <TextView
-        android:id="@+id/tvGoogle"
+        android:id="@+id/tvLinkLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="90dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="8dp"
-        android:text="Inicia sesión con:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNoCuenta"/>
-
-    <TextView
-        android:id="@+id/tvCorreoMal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Correo no encontrado"
-        android:layout_marginHorizontal="45dp"
-        android:textColor="@color/rojo_label_Mal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etCorreo"
-        android:visibility="invisible" />
-
-    <TextView
-        android:id="@+id/tvContraseñaMal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contraseña incorrecta"
-        android:layout_marginHorizontal="45dp"
-        android:textColor="@color/rojo_label_Mal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etContraseña"
-        android:visibility="invisible"/>
-
-    <TextView
-        android:id="@+id/tvUneteAhora"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="28dp"
-        android:text="¡Únete ahora!"
-        android:textStyle="bold"
-        android:textAlignment="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/registrate"
         android:textColor="@color/principal"
-        android:textColorLink="@color/principal"
+        android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tvNoCuenta"
-        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSesion" />
+        app:layout_constraintTop_toBottomOf="@+id/chbRecuerdame" />
+
+
+    <TextView
+        android:id="@+id/tvContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="@string/contrase_a"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="83dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:hint="@string/introduzca_su_contrase_a"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <TextView
+        android:id="@+id/tvMensajeErrorPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:text="@string/contrsse_a_no_encontrada_revise_los_datos"
+        android:textColor="@color/rojo_mensaje_mal"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="67dp"
+        android:autofillHints="emailAddress"
+        android:hint="@string/introduzca_su_correo_electr_nico"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloInicio" />
+
+    <TextView
+        android:id="@+id/tvMensajeErrorCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:text="@string/correo_no_encontrado_revise_los_datos"
+        android:textColor="@color/rojo_mensaje_mal"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 
     <Button
-        android:id="@+id/btnGoogle"
+        android:id="@+id/btnInicioSesion"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="60dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/principal"
+        android:text="@string/inicia_sesi_n_btn"
+        android:textSize="25sp"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <CheckBox
+        android:id="@+id/chbRecuerdame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/azulGoogle"
-        android:text="Inicia Sesión con Google"
+        android:layout_marginTop="25dp"
+        android:text="@string/recordarme_al_entrar_en_la_app"
+        android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvGoogle"
-         />
+        app:layout_constraintTop_toBottomOf="@+id/btnInicioSesion" />
+
+    <TextView
+        android:id="@+id/tvLogConGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/inicia_conGoogle"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNoCuenta" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btnGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogConGoogle"
+        android:layout_marginStart="35dp"
+        />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
