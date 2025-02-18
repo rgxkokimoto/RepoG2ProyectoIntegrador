@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListadoExperienciasFragment">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="40dp"
+        android:text="@string/titulo_desafio"
+        android:textColor="#1FCE7D"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <!-- Recomendado imagenes de 300 x 200 -->
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="120dp"
+        android:background="#000000"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imagenPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ilusiones" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvTituloInformacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="350dp"
+        android:paddingStart="50dp"
+        android:text="@string/titulo_informacion_desafio"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="420dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="400dp">
+
+        <TextView
+            android:id="@+id/tvInformacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+            android:scrollbars="vertical"
+            android:text="@string/info_desafio"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+    </ScrollView>
+
+    <!-- Está en verde pero por algún motivo en la vista diseño sale en morado. Cosmico -->
+
+    <Button
+        android:id="@+id/btnEstadoDesafio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="580dp"
+        android:background="#1FCE7D"
+        android:text="@string/info_estado_desafio"
+        android:textColor="#000000" />
+
+</FrameLayout>
