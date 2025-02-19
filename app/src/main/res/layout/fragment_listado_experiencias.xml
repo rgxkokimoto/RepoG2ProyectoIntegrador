@@ -1,30 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListadoExperienciasFragment">
+    tools:context=".ListadoExperienciasFragment"
+    android:padding="16dp"
+    >
 
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|top"
-        android:layout_marginTop="40dp"
         android:text="@string/titulo_desafio"
         android:textColor="#1FCE7D"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Recomendado imagenes de 300 x 200 -->
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="300dp"
         android:layout_height="200dp"
-        android:layout_gravity="center_horizontal|top"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="56dp"
         android:background="#000000"
-        android:padding="10dp">
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo">
 
         <ImageView
             android:id="@+id/imagenPerfil"
@@ -40,27 +48,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
-        android:layout_marginTop="350dp"
-        android:paddingStart="50dp"
+        android:layout_marginStart="35dp"
         android:text="@string/titulo_informacion_desafio"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:textStyle="bold" />
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
     <ScrollView
-        android:layout_width="420dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="400dp">
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="15dp"
+        android:background="#F4F2F2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloInformacion">
 
         <TextView
             android:id="@+id/tvInformacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingStart="50dp"
+            android:padding="16dp"
             android:scrollbars="vertical"
             android:text="@string/info_desafio"
             android:textColor="#000000"
-            android:textSize="25dp" />
+            android:textSize="25sp" />
 
     </ScrollView>
 
@@ -70,11 +85,11 @@
         android:id="@+id/btnEstadoDesafio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="580dp"
         android:background="#1FCE7D"
         android:text="@string/info_estado_desafio"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
