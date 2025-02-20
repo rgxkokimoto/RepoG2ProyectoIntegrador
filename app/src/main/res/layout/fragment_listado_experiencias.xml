@@ -64,16 +64,14 @@
 
     </ScrollView>
 
-    <!-- Está en verde pero por algún motivo en la vista diseño sale en morado. Cosmico -->
-
     <Button
         android:id="@+id/btnEstadoDesafio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
-        android:layout_marginStart="180dp"
+        android:layout_marginStart="150dp"
         android:layout_marginTop="580dp"
-        android:background="#1FCE7D"
+        android:backgroundTint="@color/principal"
         android:text="@string/info_estado_desafio"
         android:textColor="#000000" />
 

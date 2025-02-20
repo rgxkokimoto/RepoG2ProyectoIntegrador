@@ -122,7 +122,7 @@
             android:layout_weight="1"
             android:text="@string/aceptar_gestion"
             android:textColor="#000000"
-            android:background="#1FCE7D"
+            android:backgroundTint="@color/principal"
             android:textSize="16sp"
             android:layout_marginEnd="28dp" />
 
@@ -133,7 +133,7 @@
             android:layout_weight="1"
             android:text="@string/cancelar_gestion"
             android:textColor="#000000"
-            android:background="#1FCE7D"
+            android:backgroundTint="@color/principal"
             android:textSize="16sp"
             android:layout_marginStart="8dp"
             android:onClick="cancelar"/>
