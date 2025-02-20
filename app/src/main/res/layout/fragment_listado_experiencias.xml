@@ -27,7 +27,7 @@
         android:id="@+id/frameLayout"
         android:layout_width="300dp"
         android:layout_height="200dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="45dp"
         android:background="#000000"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,13 +79,11 @@
 
     </ScrollView>
 
-    <!-- Está en verde pero por algún motivo en la vista diseño sale en morado. Cosmico -->
-
     <Button
         android:id="@+id/btnEstadoDesafio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#1FCE7D"
+        android:backgroundTint="@color/principal"
         android:text="@string/info_estado_desafio"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
