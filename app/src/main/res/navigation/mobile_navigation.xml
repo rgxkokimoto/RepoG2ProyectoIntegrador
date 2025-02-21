@@ -41,5 +41,10 @@
         android:name="com.example.g2int101experience.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/listadoDeExperiencias"
+        android:name="com.example.g2int101experience.ListadoDeExperiencias"
+        android:label="fragment_listado_de_experiencias"
+        tools:layout="@layout/fragment_listado_de_experiencias" />
 
 </navigation>

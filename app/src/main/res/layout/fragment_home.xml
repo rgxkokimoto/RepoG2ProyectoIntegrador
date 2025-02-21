@@ -34,7 +34,7 @@ En condiciones donde hay más desplazamientos unmo un cardview.
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="10dp"
             >
 
@@ -52,12 +52,12 @@ En condiciones donde hay más desplazamientos unmo un cardview.
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/home_rv_misRetos"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView">
-
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                >
             </androidx.recyclerview.widget.RecyclerView>
 
 

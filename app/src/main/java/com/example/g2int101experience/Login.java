@@ -150,7 +150,7 @@ public class Login extends AppCompatActivity {
                                     binding.tvMensajeErrorPassword.setVisibility(View.GONE);
                                     binding.editTextText.setText("");
                                     binding.editTextTextPassword.setText("");
-                                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                    startActivity(new Intent(getApplicationContext(), Home.class));
 
 
                                 } else {

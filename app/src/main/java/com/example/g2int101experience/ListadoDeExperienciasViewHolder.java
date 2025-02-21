@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import org.jetbrains.annotations.NotNull;
 
 public class ListadoDeExperienciasViewHolder extends RecyclerView.ViewHolder {
-    TextView textView;
+    public TextView textView;
 
     public ListadoDeExperienciasViewHolder(@NotNull View itemView) {
         super(itemView);
