@@ -1,10 +1,12 @@
-package com.example.g2int101experience;
+package com.example.g2int101experience.listadoDeExperiencias;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.g2int101experience.R;
 
 import org.jetbrains.annotations.NotNull;
 

@@ -1,9 +1,11 @@
-package com.example.g2int101experience;
+package com.example.g2int101experience.listadoDeExperiencias;
 
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.g2int101experience.R;
 
 import org.jetbrains.annotations.NotNull;
 
