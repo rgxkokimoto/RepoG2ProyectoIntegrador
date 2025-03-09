@@ -38,6 +38,15 @@ public class Login extends AppCompatActivity {
 
 
     @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user = mAuth.getCurrentUser();
+        if (user != null) {
+            startActivity(new Intent(getApplicationContext(), Home.class));
+        }
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
@@ -141,7 +150,7 @@ public class Login extends AppCompatActivity {
                                     binding.tvMensajeErrorPassword.setVisibility(View.GONE);
                                     binding.editTextText.setText("");
                                     binding.editTextTextPassword.setText("");
-                                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                    startActivity(new Intent(getApplicationContext(), Home.class));
 
 
                                 } else {
@@ -196,7 +205,7 @@ public class Login extends AppCompatActivity {
                             map.put("name", user.getDisplayName());
                             map.put("image", user.getPhotoUrl().toString());
                             database.getReference().child("Users").child(user.getUid()).setValue(map);
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            startActivity(new Intent(getApplicationContext(), Home.class));
                         } else {
                             Toast.makeText(Login.this, "Hubo un problema al iniciar sesión", Toast.LENGTH_SHORT).show();
                         }

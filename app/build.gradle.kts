@@ -38,7 +38,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity.v190)
@@ -46,12 +45,17 @@ dependencies {
     implementation(libs.firebase.auth)
     implementation(libs.firebase.database)
     implementation(libs.play.services.base)
+    implementation(libs.play.services.maps)
+    implementation(libs.navigation.runtime)
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation ("com.google.firebase:firebase-auth:23.0.0") // Última versión estable
-    implementation ("com.google.android.gms:play-services-auth:21.1.1")
-    implementation("com.google.firebase:firebase-database")
+    implementation("com.google.firebase:firebase-auth:23.0.0")
+    implementation("com.google.android.gms:play-services-auth:21.1.1")
     implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
-
+    implementation("com.google.firebase:firebase-database:20.0.5")
+    implementation("com.google.firebase:firebase-storage:20.0.1")
+    implementation("com.squareup.picasso:picasso:2.8")
 }
